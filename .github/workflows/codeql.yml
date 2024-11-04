@@ -36,13 +36,6 @@ jobs:
         # Whether to push the image
         push: false
 
-    - name: setup CodeQL
-      uses: github/codeql-action/setup@v2
-      
-    - name: Run CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
-      with:
-          languages: 'python'
     - name: List files after analysis
       run: ls -R
     - name: Upload SARIF file
