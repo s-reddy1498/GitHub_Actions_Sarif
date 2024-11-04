@@ -53,7 +53,7 @@ jobs:
         # Whether to push the image
         push: false
         
-    - name: Perform CodeQL Analysis
+    - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: 'results.sarif'
